@@ -7,16 +7,12 @@ import (
 	"github.com/99designs/gqlgen/graphql/playground"
 	"log"
 	"net/http"
-	"os"
 )
 
 const defaultPort = "4321"
 
 func main() {
-	port := os.Getenv("PORT")
-	if port == "" {
-		port = defaultPort
-	}
+	port := defaultPort
 
 	resolver := graph.Resolver{
 		Db: make(graph.DB),
