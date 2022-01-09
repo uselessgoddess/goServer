@@ -1,0 +1,25 @@
+type Big {
+  data: [String!]!
+}
+
+input BigInput {
+  data: [String!]!
+}
+
+type Mutation {
+  big(id: String!, data: BigInput!): [String!]
+  small(id: String!, data: SmallInput!): [String!]
+}
+
+type Query {
+  big(id: String!): Big
+  small(id: String!): Small
+}
+
+type Small {
+  data: Int!
+}
+
+input SmallInput {
+  data: Int!
+}
