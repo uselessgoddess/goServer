@@ -10,7 +10,7 @@ import (
 	"os"
 )
 
-const defaultPort = "8000"
+const defaultPort = "4321"
 
 func main() {
 	port := os.Getenv("PORT")
