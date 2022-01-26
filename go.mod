@@ -1,6 +1,6 @@
 module doublets-gql
 
-go 1.12
+go 1.17
 
 require (
 	github.com/99designs/gqlgen v0.14.0
